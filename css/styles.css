@@ -1,0 +1,38 @@
+.first{
+    margin-bottom: 100px;
+    margin-left: 20px;
+}
+
+.first input {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px
+
+}
+
+#info {
+    border: 1px solid black;
+    font-weight: 600;
+    text-align: center;
+    color: darkred;
+    width: 170px;
+    border-radius: 5px;
+    background-color: bisque;
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 200px;
+}
+
+.second{
+    margin-bottom: 50px;
+}
+
+.second button{
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: azure;
+    font-weight: 600;
+}

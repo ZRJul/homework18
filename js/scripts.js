@@ -15,7 +15,19 @@ textField.addEventListener('blur', function() {
 
 /*На сторінці є дві кнопки. При натисканні на першу кнопку просимо користувача ввести в prompt посилання, при натисканні на другу - переадресовується на інший сайт (за раніше введеним посиланням). Реалізувати перевірку на http/https. Якщо протокол не вказано - додаємо*/
 
+let goLink = document.getElementById('button_two')
+function enterUrl() {
+    let url = prompt("Введіть посилання:");
 
+    if (!url.startsWith("http://") && !url.startsWith("https://")) {
+        url = "http://" + url;
+    }
+    console.log(url);
+
+    goLink.onclick = function() {
+        location.href = url;
+    }
+}
 
 /*Вивести таблицю 10 × 10, заповнену числами від 1 до 100 (таблиця створюється динамічно)*/
 

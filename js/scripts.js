@@ -25,7 +25,8 @@ function enterUrl() {
     console.log(url);
 
     goLink.onclick = function() {
-        location.href = url;
+        // location.href = url;
+        window.open(url)
     }
 }
 

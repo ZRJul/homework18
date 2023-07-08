@@ -1,4 +1,5 @@
 .first{
+    margin-top: 50px;
     margin-bottom: 100px;
     margin-left: 20px;
 }
@@ -20,7 +21,7 @@
     background-color: bisque;
     display: none;
     position: fixed;
-    top: 5%;
+    top: 12%;
     left: 200px;
 }
 
@@ -35,4 +36,23 @@
     border-radius: 5px;
     background-color: azure;
     font-weight: 600;
+}
+
+.third{
+    margin-bottom: 50px;
+
+}
+
+.third table {
+    border-collapse: collapse;
+    margin-left: 20px;
+}
+
+.third td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.fourth {
+    margin-left: 20px;
 }

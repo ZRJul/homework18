@@ -32,6 +32,34 @@ function enterUrl() {
 
 /*Вивести таблицю 10 × 10, заповнену числами від 1 до 100 (таблиця створюється динамічно)*/
 
+let table = document.getElementById("myTable");
+
+for (let i = 1; i <= 10; i++) {
+    let row = document.createElement("tr");
+
+    for (let j = 1; j <= 10; j++) {
+        let cell = document.createElement("td");
+        let number = (i - 1) * 10 + j;
+        let cellText = document.createTextNode(number);
+
+        cell.appendChild(cellText);
+        row.appendChild(cell);
+    }
+
+    table.appendChild(row);
+}
 
 /*У папці images є зображення 1.jpg, 2.jpg, 3.jpg, 4.jpg, 5.jpg, 6.jpg, 7.jpg, 8.jpg, 9.jpg. Вивести зображення з цієї папки отримане випадковим чином (Math.random)
 */
+
+
+let imgElement = document.createElement("img");
+let divElement = document.getElementById("showImg");
+
+let images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg"];
+
+let randomImage = images[Math.floor(Math.random() * images.length)];
+
+imgElement.src = "images/" + randomImage;
+
+divElement.appendChild(imgElement);
